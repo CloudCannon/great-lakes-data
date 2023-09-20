@@ -19,8 +19,8 @@
             const el = document.querySelector("#preview_area");
             // Intentionally-simple sample of getting content onto the page.
             el.innerHTML = `
-                <h1>${latestValue.data.title}</h1>
-                <h2>Published on ${latestValue.data.date}</h2>
+                <h1>${latestValue.title}</h1>
+                <h2>Published on ${latestValue.date}</h2>
 
                 ${latestValue.content_markdown}
             `;
