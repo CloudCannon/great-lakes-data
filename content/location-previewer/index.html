@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site.css">
-    <title>CMS Preview Interface</title>
+    <title>CMS Location Preview Interface</title>
 </head>
 <body>
     
@@ -19,8 +19,8 @@
             const el = document.querySelector("#preview_area");
             // Intentionally-simple sample of getting content onto the page.
             el.innerHTML = `
-                <h1>${latestValue.title}</h1>
-                <h2>Published on ${latestValue.date}</h2>
+                <h1>${latestValue.data.title}</h1>
+                <h2>${latestValue.data.city}</h2>
 
                 ${latestValue.content_markdown}
             `;
