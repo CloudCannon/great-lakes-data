@@ -4,7 +4,7 @@
   "collection": "locations",
   "data": {
     "title": "Baker College",
-    "city": "Houston",
+    "city": "Dunedin",
     "country": "USA",
     "courses": [
       "French",
@@ -25,6 +25,5 @@
       "no_index": false
     }
   },
-  "content_markdown":
-    "Baker was established as one of the four original residential colleges at Rice in the fall of 1957. It was named in honor of Captain James Addison Baker (1857-1941) who served as the Rice Institute's first Chairman of the Board of Trustees from June 24, 1891, until his death."
+  "content_markdown": "Baker was established as one of the four original residential colleges at Rice in the fall of 1957. It was named in honor of Captain James Addison Baker (1857-1941) who served as the Rice Institute's first Chairman of the Board of Trustees from June 24, 1891, until his death."
 }
