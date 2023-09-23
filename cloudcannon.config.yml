@@ -1,8 +1,8 @@
 collections_config:
-  posts:
-    path: content/posts
+  blog:
+    path: content/blog
     output: false # Tell CloudCannon to not assign output URLS to this collection, so that the `new_preview_url` is used instead
-    new_preview_url: /post-previewer/ # Use the previewer page to preview all files in this collection
+    new_preview_url: /blog-post-previewer/ # Use the previewer page to preview all files in this collection
     _enabled_editors: # Prefer opening these files in the Visual Editor
       - visual
       - data
