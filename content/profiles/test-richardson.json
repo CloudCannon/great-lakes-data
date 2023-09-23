@@ -1,0 +1,23 @@
+{
+  "id": "test-richardson.md",
+  "slug": "test-richardson",
+  "collection": "profiles",
+  "data": {
+    "title": "Test Richardson",
+    "name": "Test Richardson",
+    "designation": "Head of Test",
+    "image": "/images/team/7.jpg",
+    "image_alt": "Team member: Test Richardson",
+    "location": "content/locations/will_rice_college.json",
+    "seo": {
+      "page_description": null,
+      "canonical_url": null,
+      "featured_image": "/images/team/7.jpg",
+      "featured_image_alt": null,
+      "author_twitter_handle": null,
+      "open_graph_type": "profile",
+      "no_index": false
+    }
+  },
+  "content_markdown": "Doggo ipsum very taste wow big ol pupper snoot doge, woofer. Much ruin diet fluffer very good spot borkf, heckin good boys heck. Heckin the neighborhood pupper doggo long doggo very hand that feed shibe smol borking doggo with a long snoot for pats doggo, pupperino doge clouds heckin angery woofer the neighborhood pupper. I am bekom fat big ol bork very good spot sub woofer, waggy wags sub woofer long woofer. Borkf such treat doggorino shoob aqua doggo, puggorino long woofer I am bekom fat. Borking doggo the neighborhood pupper snoot, heck. You are doing me a frighten sub woofer boofers porgo blop, tungg h*ck. Tungg h*ck porgo sub woofer, borkdrive."
+}
