@@ -8,8 +8,8 @@
   ],
   "author": "Coen Simmons",
   "thumb_image": {
-    "image": "/images/blog/blog-thumb-5.jpg",
-    "image_alt": "Group of people discussing something shwon on a laptop"
+    "thumb_image_path": "/images/blog/blog-thumb-5.jpg",
+    "thumb_image_alt": "Group of people discussing something shwon on a laptop"
   },
   "featured_image": {
     "image": "/images/blog/featured-image-3.jpg",

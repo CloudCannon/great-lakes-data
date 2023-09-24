@@ -12,7 +12,7 @@ collections_config:
         - key: title
       gallery:
         image:
-          - key: thumb_image.image
+          - key: thumb_image_path
         fit: cover
   profiles:
     path: content/profiles
