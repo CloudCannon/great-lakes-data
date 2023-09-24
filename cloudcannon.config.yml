@@ -22,3 +22,10 @@ collections_config:
       - data
 
 output: content # Use the content folder as both the input and output directory of our build
+
+_inputs:
+  location:
+    type: select
+    options:
+      values: collections.locations
+      value_key: title
