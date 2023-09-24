@@ -1,6 +1,7 @@
 collections_config:
   blog:
     path: content/blog
+    icon: rss_feed
     output: false # Tell CloudCannon to not assign output URLS to this collection, so that the `new_preview_url` is used instead
     new_preview_url: /blog-post-previewer/ # Use the previewer page to preview all files in this collection
     _enabled_editors: # Prefer opening these files in the Visual Editor
@@ -8,6 +9,7 @@ collections_config:
       - data
   profiles:
     path: content/profiles
+    icon: account_circle
     output: false # Tell CloudCannon to not assign output URLS to this collection, so that the `new_preview_url` is used instead
     new_preview_url: /profile-previewer/ # Use the previewer page to preview all files in this collection
     _enabled_editors: # Prefer opening these files in the Visual Editor
@@ -15,6 +17,7 @@ collections_config:
       - data
   locations:
     path: content/locations
+    icon: fmd_good
     output: false # Tell CloudCannon to not assign output URLS to this collection, so that the `new_preview_url` is used instead
     new_preview_url: /location-previewer/ # Use the previewer page to preview all files in this collection
     _enabled_editors: # Prefer opening these files in the Visual Editor
@@ -22,6 +25,7 @@ collections_config:
       - data
   data:
     path: data
+    icon: pie_chart
     output: false
     _enabled_editors:
       - data
