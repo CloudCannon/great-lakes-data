@@ -9,10 +9,6 @@ collections_config:
       - data
     _schemas:
       default:
-        path: schemas/post.json
-        name: Post
-        icon: post_add
-        new_preview_url: /blog-post-previewer/
         create:
           path: blog/{filename|slugify}.json
     add_options:
