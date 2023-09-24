@@ -7,9 +7,17 @@ collections_config:
     _enabled_editors: # Prefer opening these files in the Visual Editor
       - visual
       - data
+    _schemas:
+      default:
+        path: schemas/post.json
+        name: Post
+        icon: post_add
+        new_preview_url: /blog-post-previewer/
+        create:
+          path: blog/{filename|slugify}.json
     preview:
       subtext:
-        - key: date
+        - key: author
       gallery:
         image:
           - key: thumb_image.thumb_image_path

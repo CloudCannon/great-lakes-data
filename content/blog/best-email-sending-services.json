@@ -1,24 +1,23 @@
 {
-  "date": "2022-04-14T00:00:00.000Z",
-  "title": "7 things you didn't know about email",
-  "slug": "7-things-you-didn't-know-about-email",
+  "date": "2022-03-11T00:00:00.000Z",
+  "title": "Best email sending services",
   "tags": [
-    "marketing",
+    "technology",
     "blog"
   ],
   "author": "Coen Simmons",
   "thumb_image": {
-    "thumb_image_path": "/images/blog/blog-thumb-5.jpg",
-    "thumb_image_alt": "Group of people discussing something shwon on a laptop"
+    "thumb_image_path": "/images/blog/blog-thumb-3.jpg",
+    "thumb_image_alt": "Staff meeting"
   },
   "featured_image": {
-    "image": "/images/blog/featured-image-3.jpg",
-    "image_alt": "Person drinking coffee"
+    "image": "/images/blog/featured-image-5.jpg",
+    "image_alt": "Laptop, phone and coffee"
   },
   "seo": {
     "page_description": null,
     "canonical_url": null,
-    "featured_image": "/images/blog/featured-image-3.jpg",
+    "featured_image": "/images/blog/featured-image-5.jpg",
     "featured_image_alt": null,
     "author_twitter_handle": null,
     "open_graph_type": "article",
