@@ -36,7 +36,7 @@ data_config:
   cities:
     path: data/cities.json
   countries:
-    path: data/countries
+    path: data/countries.json
     parser: json
 
 collection_groups:
