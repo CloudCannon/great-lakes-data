@@ -7,13 +7,6 @@ collections_config:
     _enabled_editors: # Prefer opening these files in the Visual Editor
       - visual
       - data
-    _schemas:
-      default:
-        create:
-          path: blog/{filename|slugify}.json
-    add_options:
-      name: Add Post
-      schema: default
     preview:
       subtext:
         - key: author
