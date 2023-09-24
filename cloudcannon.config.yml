@@ -28,7 +28,12 @@ collections_config:
 
 output: content # Use the content folder as both the input and output directory of our build
 
-data_config: true
+data_config:
+  cities:
+    path: data/cities.json
+  offices:
+    path: data/countries
+    parser: json
 
 collection_groups:
   - heading: Collections
