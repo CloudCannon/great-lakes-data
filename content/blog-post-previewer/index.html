@@ -16,10 +16,10 @@
     <script>
         async function updatePreview(CloudCannon) {
             const latestValue = await CloudCannon.value();
-            const formattedDate = new Date(latestValue.date) ;
+            const formattedDate = new Date(latestValue.date).toDateString();
 
             const el = document.querySelector("#preview_area");
-            // Intentionally-simple sample of getting content onto the page.
+            // TODO: Fix image not loading on page
             el.innerHTML = `
                 <div class="page-wrapper">
                     <div class="text-content">
