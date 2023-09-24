@@ -20,8 +20,23 @@ collections_config:
     _enabled_editors: # Prefer opening these files in the Visual Editor
       - visual
       - data
+  data:
+    path: data
+    output: false
+    _enabled_editors:
+      - data
 
 output: content # Use the content folder as both the input and output directory of our build
+
+collection_groups:
+  - heading: collections
+    collections:
+      - blog
+      - profiles
+      - locations
+  - heading: data
+    collections:
+      - data
 
 _inputs:
   location:
