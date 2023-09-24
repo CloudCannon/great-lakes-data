@@ -6,14 +6,10 @@
     "blog"
   ],
   "author": "Coen Simmons",
-  "thumb_image": {
-    "thumb_image_path": "/images/blog/blog-thumb-5.jpg",
-    "thumb_image_alt": "Group of people discussing something shwon on a laptop"
-  },
-  "featured_image": {
-    "image": "/images/blog/featured-image-3.jpg",
-    "image_alt": "Person drinking coffee"
-  },
+  "thumb_image_path": "/images/blog/blog-thumb-5.jpg",
+  "thumb_image_alt": "Group of people discussing something shwon on a laptop",
+  "image": "/images/blog/featured-image-3.jpg",
+  "image_alt": "Person drinking coffee",
   "seo": {
     "page_description": null,
     "canonical_url": null,

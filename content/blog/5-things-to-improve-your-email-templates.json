@@ -6,14 +6,10 @@
     "blog"
   ],
   "author": "Coen Simmons",
-  "thumb_image": {
-    "thumb_image_path": "/images/blog/blog-thumb-6.jpg",
-    "thumb_image_alt": "People working on laptops and looking at charts"
-  },
-  "featured_image": {
-    "image": "/images/blog/featured-image-2.jpg",
-    "image_alt": "Children looking at a laptop"
-  },
+  "thumb_image_path": "/images/blog/blog-thumb-6.jpg",
+  "thumb_image_alt": "People working on laptops and looking at charts",
+  "image": "/images/blog/featured-image-2.jpg",
+  "image_alt": "Children looking at a laptop",
   "seo": {
     "page_description": "",
     "canonical_url": "",
