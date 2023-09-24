@@ -7,6 +7,13 @@ collections_config:
     _enabled_editors: # Prefer opening these files in the Visual Editor
       - visual
       - data
+    preview:
+      subtext:
+        - key: title
+      gallery:
+        image:
+          - key: thumb_image.image
+        fit: cover
   profiles:
     path: content/profiles
     icon: account_circle
@@ -15,6 +22,13 @@ collections_config:
     _enabled_editors: # Prefer opening these files in the Visual Editor
       - visual
       - data
+    preview:
+      subtext:
+        - key: name
+      gallery:
+        image:
+          - key: image
+        fit: cover
   locations:
     path: content/locations
     icon: fmd_good
