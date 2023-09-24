@@ -28,13 +28,15 @@ collections_config:
 
 output: content # Use the content folder as both the input and output directory of our build
 
+data_config: true
+
 collection_groups:
-  - heading: collections
+  - heading: Collections
     collections:
       - blog
       - profiles
       - locations
-  - heading: data
+  - heading: Data
     collections:
       - data
 
@@ -44,3 +46,12 @@ _inputs:
     options:
       values: collections.locations
       value_key: title
+  city:
+    type: select
+    options:
+      values: data.cities
+  country:
+    type: select
+    options:
+      values: data.countries
+      
