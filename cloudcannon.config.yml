@@ -9,10 +9,10 @@ collections_config:
       - data
     preview:
       subtext:
-        - key: title
+        - key: date
       gallery:
         image:
-          - key: thumb_image_path
+          - key: thumb_image.thumb_image_path
         fit: cover
   profiles:
     path: content/profiles
@@ -24,7 +24,7 @@ collections_config:
       - data
     preview:
       subtext:
-        - key: name
+        - key: designation
       gallery:
         image:
           - key: image
@@ -37,6 +37,13 @@ collections_config:
     _enabled_editors: # Prefer opening these files in the Visual Editor
       - visual
       - data
+    preview:
+      subtext:
+        - key: city
+      gallery:
+        image:
+          - key: image
+        fit: cover
   data:
     path: data
     icon: pie_chart
