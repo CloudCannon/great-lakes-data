@@ -31,7 +31,7 @@ output: content # Use the content folder as both the input and output directory 
 data_config:
   cities:
     path: data/cities.json
-  offices:
+  countries:
     path: data/countries
     parser: json
 
