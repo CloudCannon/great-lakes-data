@@ -9,10 +9,8 @@ const YAML = require('json-to-pretty-yaml');
     throw new Error('Please provide the collection name to install')
   }
 
-  const collectionDir = path.join('.' , 'src', 'content', collectionName);
-  // rm -rf ./src/content/$COLLECTION
-  // mkdir ./src/content/$COLLECTION
-  // cp ./great-lakes-data/content/$COLLECTION/* ./src/content/$COLLECTION
+  const collectionDir = path.join('great-lakes-data', 'content', collectionName);
+  const destDir = path.join('.' , 'src', 'content', collectionName);
   console.log(`📝 Formatting ${collectionName} data files now from ${collectionDir}...`);
   const files = await fs.readdir(collectionDir);
 
@@ -20,7 +18,7 @@ const YAML = require('json-to-pretty-yaml');
     // Parse the filename
     const originalFilepath = path.join(collectionDir, filename);
     const markdownFilename = filename.replace(/json/g, 'md').replace(/_/g, '-');
-    const markdownFilepath = path.join(collectionDir, markdownFilename);
+    const markdownFilepath = path.join(destDir, markdownFilename);
 
     // Parse JSON data file and turn the front matter into formatted yaml
     console.log(`📝 Reading ${originalFilepath}...`);
@@ -38,7 +36,6 @@ const YAML = require('json-to-pretty-yaml');
     ].join('\n');
     
     // Create new markdown file
-    await fs.writeFile(markdownFilepath, totalPage)
-    return fs.unlink(originalFilepath);
+    return fs.writeFile(markdownFilepath, totalPage)
   }));
 })();
