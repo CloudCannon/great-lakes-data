@@ -12,11 +12,12 @@ const path = require('path');
   // mkdir ./data/temp-$COLLECTION
   // cp ./great-lakes-data/content/$COLLECTION/* ./data/temp-$COLLECTION
   console.log(`📝 Formatting ${collectionName} data files now...`);
-  const collectionDir = path.join('.' , 'src', 'content', collectionName);
+  const collectionDir = path.join('.' , 'data', `temp-${collectionName}`);
   const files = await fs.readdir(collectionDir);
 
   const items = await Promise.all(files.map(async (fileName) => {
     const dataFilepath = `${collectionDir}/${fileName}`;
+    console.log(`📝 Reading ${dataFilepath} into data file...`);
     const contents = await fs.readFile(dataFilepath);
     await fs.unlink(dataFilepath);
     return JSON.parse(contents.toString('utf8'));
