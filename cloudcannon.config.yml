@@ -30,7 +30,7 @@ collections_config:
       gallery:
         image:
           - key: image
-        fit: cover
+        fit: contain
   locations:
     path: content/locations
     icon: fmd_good
