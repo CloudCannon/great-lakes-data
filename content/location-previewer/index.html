@@ -19,10 +19,28 @@
             const el = document.querySelector("#preview_area");
             // Intentionally-simple sample of getting content onto the page.
             el.innerHTML = `
-                <h1>${latestValue.title}</h1>
-                <h2>${latestValue.city}</h2>
+              <div class="location-previewer-wrapper">
+                <img
+                  class="location-previewer-image"
+                  src=${latestValue.image}
+                  alt=${latestValue.image_alt}
+                />
+                <div>
+                  <h1 class="location-previewer-heading">${latestValue.title}</h1>
+                  <div class="location-previewer-location">
+                    <p>${latestValue.city}, ${latestValue.country}</p>
+                  </div>
+                  <hr>
+                  <ul class="location-previewer-course-list">
+                    ${latestValue.courses.map((course) => (<li>{course}</li>))}
+                  </ul>
+                  <hr>
+                  <div class="location-previewer-markdown-content">
+                    ${latestValue.content_markdown}
+                  </div>
+                </div>
+              </div>
 
-                ${latestValue.content_markdown}
             `;
         }
 
