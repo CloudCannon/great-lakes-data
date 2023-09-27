@@ -892,7 +892,7 @@
 }
 .profile-details {
   display: flex;
-  gap: 8px;
+  gap: 16px;
 }
 .profile-location {
   position: relative;
@@ -904,7 +904,7 @@
   width: 2px;
   height: 15px;
   top: 50%;
-  left: -7%;
+  left: -8px;
   transform: translate(-50%, -50%);
 }
 
