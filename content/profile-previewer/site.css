@@ -884,4 +884,13 @@
       text-decoration: underline;
     }
   }
+
+  .profile-page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: 600px) {
+      grid-template-columns: 1fr 3fr; 
+    }
+  }
   

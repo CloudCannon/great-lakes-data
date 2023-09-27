@@ -19,10 +19,15 @@
             const el = document.querySelector("#preview_area");
             // Intentionally-simple sample of getting content onto the page.
             el.innerHTML = `
-                <h1>${latestValue.title}</h1>
-                <h2>${latestValue.designation}</h2>
-
-                ${latestValue.content_markdown}
+                <div class="profile-page-wrapper">
+                    <img src="${latestValue.image}" alt="${latestValue.image_alt}">
+                    <div class="text-wrapper">
+                    <h1>${latestValue.title}</h1>
+                    <h2>${latestValue.designation}</h2>
+            
+                    ${latestValue.content_markdown}
+                    </div>
+                </div>
             `;
         }
 

@@ -19,7 +19,6 @@
             const formattedDate = new Date(latestValue.date).toDateString();
 
             const el = document.querySelector("#preview_area");
-            // TODO: Fix image not loading on page
             el.innerHTML = `
                 <div class="page-wrapper">
                     <div class="text-content">
@@ -27,7 +26,7 @@
                         <h2>${latestValue.author}</h2>
                         <h2>${formattedDate}</h2>
                     </div>
-                    <img src="/images/blog/featured-image-2.jpg" alt="${latestValue.image_alt}">
+                    <img src="${latestValue.image}" alt="${latestValue.image_alt}">
                 </div>
 
                 ${latestValue.content_markdown}
