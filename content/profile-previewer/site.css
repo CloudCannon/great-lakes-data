@@ -885,12 +885,19 @@
     }
   }
 
-  .profile-page-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
+.profile-page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 
-    @media screen and (min-width: 600px) {
-      grid-template-columns: 1fr 3fr; 
-    }
+}
+@media screen and (min-width: 600px) {
+  .profile-page-wrapper {
+    grid-template-columns: 1fr 1fr;
   }
+  
+  .profile-page-wrapper > img {
+    margin-top: 24px;
+  }
+}
   
