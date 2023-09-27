@@ -1,14 +1,12 @@
-# TODO: How to add schemas when they're json
-
+output: content
+paths:
+  uploads: content/images
+  static: content
 collections_config:
   blog:
     path: content/blog
+    output: false
     icon: rss_feed
-    output: false # Tell CloudCannon to not assign output URLS to this collection, so that the `new_preview_url` is used instead
-    new_preview_url: /blog-post-previewer/ # Use the previewer page to preview all files in this collection
-    _enabled_editors: # Prefer opening these files in the Visual Editor
-      - visual
-      - data
     preview:
       subtext:
         - key: author
@@ -16,20 +14,25 @@ collections_config:
         image:
           - key: thumb_image_path
         fit: cover
+    _enabled_editors:
+      - visual
+      - data
     _inputs:
       author:
         type: select
         options:
+          allow_empty: true
           values: collections.profiles
           value_key: name
+        cascade: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url: /blog-post-previewer/
   profiles:
     path: content/profiles
+    output: false
     icon: account_circle
-    output: false # Tell CloudCannon to not assign output URLS to this collection, so that the `new_preview_url` is used instead
-    new_preview_url: /profile-previewer/ # Use the previewer page to preview all files in this collection
-    _enabled_editors: # Prefer opening these files in the Visual Editor
-      - visual
-      - data
     preview:
       subtext:
         - key: designation
@@ -37,14 +40,17 @@ collections_config:
         image:
           - key: image
         fit: contain
-  locations:
-    path: content/locations
-    icon: fmd_good
-    output: false # Tell CloudCannon to not assign output URLS to this collection, so that the `new_preview_url` is used instead
-    new_preview_url: /location-previewer/ # Use the previewer page to preview all files in this collection
-    _enabled_editors: # Prefer opening these files in the Visual Editor
+    _enabled_editors:
       - visual
       - data
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url: /profile-previewer/
+  locations:
+    path: content/locations
+    output: false
+    icon: fmd_good
     preview:
       subtext:
         - key: city
@@ -52,22 +58,22 @@ collections_config:
         image:
           - key: image
         fit: cover
+    _enabled_editors:
+      - visual
+      - data
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url: /location-previewer/
   data:
     path: data
-    icon: pie_chart
     output: false
+    icon: pie_chart
     _enabled_editors:
       - data
-
-output: content # Use the content folder as both the input and output directory of our build
-
-data_config:
-  cities:
-    path: data/cities.json
-  countries:
-    path: data/countries.json
-    parser: json
-
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 collection_groups:
   - heading: Collections
     collections:
@@ -77,19 +83,34 @@ collection_groups:
   - heading: Data
     collections:
       - data
-
 _inputs:
   location:
     type: select
     options:
+      allow_empty: true
       values: collections.locations
       value_key: title
+    cascade: true
   city:
     type: select
     options:
+      allow_empty: true
       values: data.cities
+    cascade: true
   country:
     type: select
     options:
+      allow_empty: true
       values: data.countries
-      
+    cascade: true
+_select_data: {}
+_structures: {}
+_editables: {}
+data_config:
+  cities:
+    path: data/cities.json
+    parser:
+  countries:
+    path: data/countries.json
+    parser: json
+timezone: Etc/UTC
