@@ -33,7 +33,6 @@ const YAML = require('json-to-pretty-yaml');
       // Parse JSON data file and turn the front matter into formatted yaml
       console.log(`📝 Reading ${originalFilepath}...`);
       const contents = await fs.readFile(originalFilepath);
-      // console.log(originalFilepath, contents.toString('utf8'));
       const jsonObj = JSON.parse(contents.toString('utf8'));
       const { content_markdown, ...frontMatterData } = jsonObj;
 
