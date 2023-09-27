@@ -18,7 +18,7 @@ collections_config:
         fit: cover
     schemas:
       default:
-        path: .cloudcannon/schemas/post.json
+        path: '.cloudcannon/schemas/post.json'
   profiles:
     path: content/profiles
     icon: account_circle
