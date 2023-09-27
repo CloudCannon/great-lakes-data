@@ -16,6 +16,12 @@ collections_config:
         image:
           - key: thumb_image_path
         fit: cover
+    _inputs:
+      author:
+        type: select
+        options:
+          values: collections.profiles
+          value_key: name
   profiles:
     path: content/profiles
     icon: account_circle
