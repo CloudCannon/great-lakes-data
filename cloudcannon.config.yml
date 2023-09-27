@@ -16,9 +16,6 @@ collections_config:
         image:
           - key: thumb_image_path
         fit: cover
-    schemas:
-      default:
-        path: './.cloudcannon/schemas/post.json'
   profiles:
     path: content/profiles
     icon: account_circle
