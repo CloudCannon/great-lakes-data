@@ -894,10 +894,10 @@
   display: flex;
   gap: 8px;
 }
-.profile-designation {
+.profile-location {
   position: relative;
 }
-.profile-designation::after {
+.profile-location::after {
   position: absolute;
   content: "";
   background: #4d4d4d;
