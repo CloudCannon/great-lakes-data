@@ -898,6 +898,7 @@
   
   .profile-page-wrapper > img {
     margin-top: 24px;
+    border-radius: 8px;
   }
 }
   

@@ -22,10 +22,12 @@
                 <div class="profile-page-wrapper">
                     <img src="${latestValue.image}" alt="${latestValue.image_alt}">
                     <div class="text-wrapper">
-                    <h1>${latestValue.title}</h1>
-                    <h2>${latestValue.designation}</h2>
-            
-                    ${latestValue.content_markdown}
+                        <h1>${latestValue.title}</h1>
+                        <hr>
+                        <p>${latestValue.location}</p>
+                        <p>${latestValue.designation}</p>
+                        <hr>
+                        ${latestValue.content_markdown}
                     </div>
                 </div>
             `;
