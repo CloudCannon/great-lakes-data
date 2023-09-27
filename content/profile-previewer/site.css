@@ -893,7 +893,7 @@
 }
 @media screen and (min-width: 600px) {
   .profile-page-wrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
   }
   
   .profile-page-wrapper > img {
