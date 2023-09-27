@@ -893,9 +893,6 @@ body > footer {
   font-size: 2rem;
   font-weight: bolder;
 }
-.location-previewer-location {
-  padding-bottom: 1rem;
-}
 .location-previewer-markdown-content {
   margin: 1rem auto;
   max-width: 900px;
