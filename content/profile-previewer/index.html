@@ -21,11 +21,13 @@
             el.innerHTML = `
                 <div class="profile-page-wrapper">
                     <img src="${latestValue.image}" alt="${latestValue.image_alt}">
-                    <div class="text-wrapper">
+                    <div>
                         <h1>${latestValue.title}</h1>
                         <hr>
-                        <p>${latestValue.location}</p>
-                        <p>${latestValue.designation}</p>
+                        <div class="profile-details">
+                            <p class="profile-designation">${latestValue.designation}</p>
+                            <p>${latestValue.location}</p>
+                        </div>
                         <hr>
                         ${latestValue.content_markdown}
                     </div>

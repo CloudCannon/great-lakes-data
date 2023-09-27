@@ -889,8 +889,25 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-
 }
+.profile-details {
+  display: flex;
+  gap: 8px;
+}
+.profile-designation {
+  position: relative;
+}
+.profile-designation::after {
+  position: absolute;
+  content: "";
+  background: #4d4d4d;
+  width: 2px;
+  height: 15px;
+  top: 50%;
+  left: -7%;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 600px) {
   .profile-page-wrapper {
     grid-template-columns: 2fr 3fr;
