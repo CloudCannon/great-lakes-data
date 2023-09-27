@@ -885,14 +885,8 @@ body > footer {
   }
 }
 
-.location-previewer-wrapper {
-  display: grid;
-  gap: 16px;
-}
-
 .location-previewer-image {
   border-radius: 8px;
-  aspect-ratio: 4 / 3;
 }
 
 .location-previewer-heading {
@@ -900,23 +894,14 @@ body > footer {
   font-weight: bolder;
 }
 .location-previewer-location {
-  padding-bottom: 2rem;
-}
-.location-previewer-course-list {
-  margin: 0 auto;
-  max-width: 900px;
-  font-weight: lighter;
-  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 .location-previewer-markdown-content {
-  margin: 3rem auto;
+  margin: 1rem auto;
   max-width: 900px;
 }
 
 @media screen and (min-width: 600px) {
-  .location-previewer-wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
   .location-previewer-heading {
     font-size: 3rem;
   }
