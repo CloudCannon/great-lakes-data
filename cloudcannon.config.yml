@@ -3,8 +3,8 @@ paths:
   uploads: content/images
   static: content
 collections_config:
-  blog:
-    path: content/blog
+  engineering:
+    path: content/engineering
     output: false
     icon: rss_feed
     preview:
@@ -28,7 +28,6 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    new_preview_url: /blog-post-previewer/
   profiles:
     path: content/profiles
     output: false
@@ -77,7 +76,7 @@ collections_config:
 collection_groups:
   - heading: Collections
     collections:
-      - blog
+      - engineering
       - profiles
       - locations
   - heading: Data

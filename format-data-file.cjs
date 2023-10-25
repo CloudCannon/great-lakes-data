@@ -29,7 +29,8 @@ const path = require('path');
   const destPath = path.join('data', `${collectionName}.json`);
   console.log(`Writing to ${destPath}`);
   await fs.mkdir(path.join('data'), { recursive: true });
-  await fs.writeFile(destPath, JSON.stringify(items, null, '\t'), {
-    encoding: 'utf8',
-  });
+  await fs.writeFile(destPath, items, null, '\t'),
+    {
+      encoding: 'utf8',
+    };
 })();
