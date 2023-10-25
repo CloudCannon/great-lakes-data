@@ -7,24 +7,13 @@ collections_config:
     path: content/engineering
     output: false
     icon: rss_feed
-    preview:
-      subtext:
-        - key: author
-      gallery:
-        image:
-          - key: thumb_image_path
-        fit: cover
-    _enabled_editors:
-      - visual
-      - data
-    _inputs:
-      author:
-        type: select
-        options:
-          allow_empty: true
-          values: collections.profiles
-          value_key: name
-        cascade: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  science:
+    path: content/science
+    output: false
+    icon: rss_feed
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
